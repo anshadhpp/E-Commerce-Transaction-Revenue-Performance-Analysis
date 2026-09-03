@@ -1,5 +1,9 @@
-# E-Commerce-Transaction-Revenue-Performance-Analysis
-The dataset contains transactional e-commerce order records spanning from January 1, 2024 to August 16, 2026.  
+# E-Commerce Transaction & Revenue Performance Analysis
+
+An end-to-end data science and machine learning project analyzing **1.1 million** transactional e-commerce order records across 20 metropolitan and regional markets in India (January 2024 – August 2026).
+
+---
+
 ## 📌 Project Overview
 The objective of this project is to examine revenue attribution, evaluate geographical demand dispersion, segment city markets via unsupervised learning, and build predictive regression pipelines to forecast order revenue.
 
@@ -23,7 +27,7 @@ The objective of this project is to examine revenue attribution, evaluate geogra
 ## 🧠 Machine Learning Architecture
 
 ### 1. Market Segmentation (K-Means Clustering)
-* **Methodology**: Applied standard feature normalization (`StandardScaler`) across total revenue, order count, total volume, and average order value.
+* **Methodology**: Standard feature normalization (`StandardScaler`) across total revenue, order count, total volume, and average order value.
 * **Optimal Clusters ($k=3$)**:
   * **Tier 1 (High Revenue)**: High-AOV regional and metro hubs (e.g., Kochi, Surat, Hyderabad, Delhi).
   * **Tier 2 (High Volume)**: Consistent bulk-order regional demand (e.g., Bhopal, Lucknow, Mumbai, Pune).
@@ -36,7 +40,7 @@ The objective of this project is to examine revenue attribution, evaluate geogra
 * **Predictor Variables**: `Product_Code`, `Category_Code`, `City_Code`, `Quantity`, `Month`, `DayofWeek`, `Day`
 * **Train/Test Split**: 80,000 training samples / 20,000 test samples (random state 42)
 * **Model Evaluation**:
-  * **$R^2$ Score**: `0.8874` (~88.7% variance explained)
+  * **R² Score**: `0.8874` (~88.7% variance explained)
   * **RMSE**: `₹20,106.40`
   * **MAE**: `₹8,901.60`
 * **Top Revenue Drivers**:
@@ -46,17 +50,8 @@ The objective of this project is to examine revenue attribution, evaluate geogra
 
 ---
 
-## 📂 Repository Structure
-
-```text
-├── .gitignore
-├── LICENSE
-├── README.md
-├── requirements.txt
-├── data/
-│   ├── raw/                  # Raw dataset instructions / placeholder
-│   └── processed/            # Aggregated metrics (city_kpis.csv)
-├── notebooks/
-│   └── ecommerce_sales_analysis.ipynb
-└── src/
-    └── pipeline.py           # Reusable end-to-end processing pipeline
+## 🛠️ Tech Stack
+* **Language**: Python 3.10+
+* **Data Processing**: pandas, NumPy
+* **Data Visualization**: Matplotlib, Seaborn
+* **Machine Learning**: scikit-learn
