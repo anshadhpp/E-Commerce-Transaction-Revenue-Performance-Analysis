@@ -1,4 +1,4 @@
-# E-Commerce Transaction & Revenue Performance Analysis
+# E-Commerce Revenue Analytics & Customer Segmentation
 
 An end-to-end data science and machine learning project analyzing **1.1 million** transactional e-commerce order records across 20 metropolitan and regional markets in India (January 2024 – August 2026).
 
